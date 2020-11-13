@@ -1,0 +1,57 @@
+.content{
+color: #dedcdc;
+width: 100%;
+  background-color: rgb(43,43,43);
+
+  .presentation{
+    margin: 0 30% 0 30%;
+  }
+  h2{
+    text-align: start;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 25px;
+
+  }
+
+  p{
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  #signature{
+  border-top: solid 1px;
+  margin-top: 25px;
+    padding-top: 10px;
+  text-align: end;
+    width: 100%;
+}
+
+
+}
+
+strong{
+  color: #73bbf1;
+}
+
+.link{
+  text-decoration: underline #73bbf1;
+  cursor: pointer;
+
+  strong:hover{
+    color: rgb(216, 166, 30);
+    text-decoration: underline rgb(216, 166, 30);
+  }
+}
+
+
+@media (max-width: 768px) {
+
+.presentation{
+  width: 90%;
+}
+
+  p{
+    margin-bottom: 70px;
+  }
+}
