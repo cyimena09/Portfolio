@@ -2,13 +2,27 @@
 <header id="header">
     <nav>
       <ul>
-        <li class="accueil" routerLinkActive="active"><span class="icon fas fa-home"></span><a (click)="onNavigate('home')">Accueil</a></li>
-        <li routerLinkActive="active"><span class="icon fas fa-drafting-compass"></span><a (click)="onNavigate('projects')">Mes projets</a></li>
-        <li routerLinkActive="active"><span class="icon fas fa-graduation-cap" ></span><a (click)="onNavigate('skills')">Compétences</a></li>
-        <li routerLinkActive="active"><span class="fas fa-envelope"></span><a (click)="onNavigate('contact')">Contact</a></li>
-        <li><a href="https://www.linkedin.com/in/emile-cyimena-9099a4176/" target="_blank"><span class="network fab fa-linkedin"></span></a></li>
-        <li><a href="https://github.com/cyimena09?tab=repositories" target="_blank"><span class="network fab fa-github"></span></a></li>
-        <li><a href="assets/cv/emile-cyimena-cv.pdf"><span id="cv" class="network fas fa-download"></span></a></li>
+        <li class="accueil" routerLinkActive="active">
+          <span class="icon fas fa-home"></span><a (click)="onNavigate('home')">Accueil</a>
+        </li>
+        <li routerLinkActive="active">
+          <span class="icon fas fa-drafting-compass"></span><a (click)="onNavigate('projects')">Mes projets</a>
+        </li>
+        <li routerLinkActive="active">
+          <span class="icon fas fa-graduation-cap"></span><a (click)="onNavigate('skills')">Compétences</a>
+        </li>
+        <li routerLinkActive="active">
+          <span class="fas fa-envelope"></span><a (click)="onNavigate('contact')">Contact</a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/emile-cyimena-9099a4176/" target="_blank">
+          <span class="network fab fa-linkedin"></span><span class="network-text">Linkedin</span></a>
+        </li>
+        <li><a href="https://github.com/cyimena09?tab=repositories" target="_blank">
+          <span class="network fab fa-github"></span><span class="network-text">Github</span></a>
+        </li>
+        <li><a href="assets/cv/emile-cyimena-cv.pdf">
+          <span id="cv" class="network fas fa-download"></span><span class="network-text" id="cv-text">CV</span></a>
+        </li>
       </ul>
     </nav>
 </header>
