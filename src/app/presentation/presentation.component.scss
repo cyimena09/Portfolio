@@ -1,33 +1,32 @@
 .content{
-color: #dedcdc;
-width: 100%;
+  color: #dedcdc;
+  width: 100%;
   background-color: rgb(43,43,43);
 
   .presentation{
-    margin: 0 30% 0 30%;
+    width: 750px;
   }
+
   h2{
     text-align: start;
     margin-bottom: 20px;
     width: 100%;
     font-size: 25px;
-
   }
 
   p{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     text-align: justify;
+    font-size: 16px;
   }
 
   #signature{
-  border-top: solid 1px;
-  margin-top: 25px;
+    border-top: solid 1px;
+    margin-top: 25px;
     padding-top: 10px;
-  text-align: end;
+    text-align: end;
     width: 100%;
-}
-
-
+  }
 }
 
 strong{
@@ -45,13 +44,24 @@ strong{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 818px) {
 
-.presentation{
-  width: 90%;
-}
+  .content{
 
-  p{
-    margin-bottom: 70px;
+    .presentation {
+      width: 500px;
+    }
   }
 }
+
+
+@media (max-width: 510px) {
+
+  .content{
+
+    .presentation {
+      width: 90%;
+    }
+  }
+}
+

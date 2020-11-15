@@ -15,51 +15,36 @@ header{
   z-index: 1;
 }
 
-.content{
+nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 60%;
+  width: 750px;
+  align-items: center;
 
-  h2{
+  ul{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-
-    font-size: 18px;
-    font-weight: bold;
+    justify-content: space-between;
+    font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    word-spacing: 0.3em;
-  }
+    list-style: none;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
 
+    li{
+      font-weight: initial;
 
-  nav{
-    display: flex;
-    align-items: center;
+      span{
+        padding-right: 10px;
+      }
 
-    ul{
-      display: flex;
-      flex-direction: row;
-      font-size: 16px;
-      text-transform: uppercase;
-      list-style: none;
-      color: white;
-      font-family:  'Oswald', sans-serif;;
-
-      li{
-        padding-right: 35px;
-
-        span{
-          padding-right: 10px;
-        }
-
-        a{
-          cursor: pointer;
-        }
-        a:hover{
-          color:  rgb(216, 166, 30);
-        }
+      a{
+        cursor: pointer;
+      }
+      a:hover{
+        color: rgb(216, 166, 30);
       }
     }
   }
@@ -72,11 +57,9 @@ header{
   .network:hover{
     color:  rgb(216, 166, 30);
   }
-
 }
 
 #cv{
-
   color: rgb(89, 160, 243);
 }
 
@@ -87,58 +70,30 @@ header{
 
 @media (max-width: 768px) {
 
-  *{
-     padding: 0;
-    margin: 0;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+  nav{
     width: 100%;
-  }
+    padding: 0 8px 0 8px;
 
+    ul{
 
+      li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-}
+        span{
+          display: flex;
+          padding-right: 0;
+          align-items: center;
+          justify-content: center;
+        }
 
-@media (max-width: 620px) {
-
-   *{
-     padding: 0;
-    margin: 0;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  ul{
-display: flex;
-justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-
-    a{
-      font-size: 10px;
-      white-space: nowrap;
+        a{
+          font-size: 10px;
+          white-space: nowrap;
+        }
+      }
     }
   }
-
-
-
 }

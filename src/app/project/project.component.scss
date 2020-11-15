@@ -1,9 +1,14 @@
 .content{
-  margin: 0 25% 0 25% ;
+  width: 100% ;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
+}
+
+h3{
+  color: #600505;
+  font-weight: bold;
 }
 
 .project{
@@ -14,6 +19,7 @@
   margin-bottom: 70px;
   padding-bottom: 20px;
   border-bottom: solid silver 1px;
+  width: 850px;
 
   a{
     width: 30%;
@@ -42,38 +48,63 @@ img:hover{
     font-size: 13px;
   }
 
-
-
 }
 
-h3{
-  color: #600505;
-  font-weight: bold;
+
+@media (max-width: 900px) {
+
+  .content{
+    .project {
+      width: 700px;
+    }
+  }
 }
+
 
 @media (max-width: 768px) {
 
-.content{
-  margin: 0;
+  .content{
 
-  .project{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .project{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
 
-    a{
-      width: 80%;
-    }
+      a{
+        width: 80%;
+        display: flex;
+        justify-content: center;
 
-    .description{
-      margin-top: 20px;
-      width: 90%;
+        figure{
+          width: 400px;
+        }
+      }
+
+      .description{
+        margin-top: 20px;
+        width: 90%;
+      }
     }
   }
 
-}
-
   #project-crowdfunding{
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .content {
+
+    .project {
+
+      a {
+
+        figure {
+          width: 100%;
+        }
+      }
+    }
   }
 }

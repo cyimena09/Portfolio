@@ -7,7 +7,6 @@ import {ViewportScroller} from '@angular/common';
   styleUrls: ['./presentation.component.scss']
 })
 export class PresentationComponent implements OnInit {
-
   message;
   actualDate = new Date();
 
