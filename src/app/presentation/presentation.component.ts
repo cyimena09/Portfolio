@@ -13,7 +13,7 @@ export class PresentationComponent implements OnInit {
   constructor(private viewportScroller: ViewportScroller) { }
 
   ngOnInit(): void {
-    if(this.actualDate.getHours() < 12){
+    if(this.actualDate.getHours() > 6 && this.actualDate.getHours() < 12){
       this.message = 'matinée';
     }
     else if(this.actualDate.getHours() > 12 && this.actualDate.getHours() < 18){

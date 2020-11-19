@@ -25,6 +25,12 @@ h3{
   a{
     width: 30%;
     text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+
+    figure{
+      margin-bottom: 0;
+    }
   }
 
   .description{
