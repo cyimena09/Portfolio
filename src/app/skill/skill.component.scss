@@ -47,10 +47,15 @@
   align-items: center;
 
     .skills{
-    display: flex;
-    justify-content: space-between;
-    width: 1300px;
-    margin-top: 50px;
+      margin-top: 100px;
+      width: 850px;
+
+      .skill{
+        margin-bottom: 70px;
+  padding-bottom: 20px;
+  border-bottom: solid silver 1px;
+      }
+
   }
 
 }
@@ -64,20 +69,11 @@
   background-color: rgb(240,240,240);
 }
 
-@media (max-width: 1336px) {
+@media (max-width: 880px) {
   .backend, .frontend{
     .skills{
       flex-direction: column;
-      width: 100%;
-
-      .skill{
-        margin-left: 40%;
-        margin-bottom: 50px;
-
-        ul{
-          margin-top: 15px;
-        }
-      }
+      width: 90%;
     }
   }
 }
@@ -87,11 +83,8 @@
   .backend, .frontend{
 
     .skills{
-      flex-direction: column;
-      width: 100%;
 
       .skill{
-        margin-left: 30px;
 
         h4{
           font-size: 21px;
