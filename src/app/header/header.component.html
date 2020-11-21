@@ -8,9 +8,18 @@
         <li routerLinkActive="active">
           <span class="icon fas fa-drafting-compass"></span><a (click)="onNavigate('projects')">Mes projets</a>
         </li>
-        <li routerLinkActive="active">
-          <span class="icon fas fa-graduation-cap"></span><a (click)="onNavigate('skills')">Compétences</a>
+        <li routerLinkActive="active" id="skills">
+          <span class=" fas fa-graduation-cap"></span><a  (click)="onNavigate('skills')">Compétences <span id="arrow-drop-menu" class=" fas fa-angle-down"></span> </a>
+
+
+
+            <ul id="submenu">
+              <li><a (click)="onNavigate('backend')">Backend</a></li>
+              <li><a (click)="onNavigate('frontend')">Frontend</a></li>
+            </ul>
+
         </li>
+
         <li routerLinkActive="active">
           <span class="fas fa-envelope"></span><a (click)="onNavigate('contact')">Contact</a>
         </li>

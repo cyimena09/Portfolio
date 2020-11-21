@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+
 header{
   position: fixed;
   display: flex;
@@ -48,6 +49,21 @@ nav{
         color: rgb(216, 166, 30);
       }
     }
+
+    #submenu{
+      display: none;
+      color: black;
+      background-color: #e5e4e1;
+      flex-direction: column;
+      position: absolute;
+      width: 180px;
+      border: silver solid 1px;
+      text-align: center;
+    }
+
+    #skills:hover #submenu{
+      display: flex;
+    }
   }
 
   .network{
@@ -73,6 +89,7 @@ nav{
 }
 
 
+// ********************************************* SCREEN RESPONSIVITY **************************************************
 @media (max-width: 768px) {
 
   nav{
@@ -102,6 +119,15 @@ nav{
         .network{
           font-size: 16px;
         }
+      }
+
+      #arrow-drop-menu{
+        border: solid red;
+        display: none;
+      }
+
+      #skills:hover #submenu{
+        display: none;
       }
     }
 

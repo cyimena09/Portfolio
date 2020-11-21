@@ -57,6 +57,27 @@ img:hover{
 }
 
 
+// ********************************************* ANIMATIONS ***********************************************************
+.visible, .invisible {
+  opacity: 0.0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+[slideInRight].invisible {
+  transform: translate(50px, 0);
+}
+
+[slideInRight].visible, [slideInLeft].visible {
+  opacity: 1;
+  transform: translate(0px, 0);
+}
+
+[slideInLeft].invisible {
+  transform: translate(-50px, 0);
+}
+
+
+// ********************************************* SCREEN RESPONSIVITY **************************************************
 @media (max-width: 900px) {
 
   .content{

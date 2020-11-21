@@ -32,4 +32,10 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  onSubMenu(){
+    let subMenu = document.getElementById("blacked")
+    console.log(subMenu.style.display)
+    subMenu.style.display === 'none' || subMenu.style.display === '' ? subMenu.style.display = 'flex' : subMenu.style.display = 'none'
+  }
+
 }
