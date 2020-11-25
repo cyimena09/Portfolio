@@ -46,18 +46,16 @@
   flex-direction: column;
   align-items: center;
 
-    .skills{
-      margin-top: 100px;
-      width: 850px;
+  .skills{
+    margin-top: 100px;
+    width: 850px;
 
-      .skill{
-        margin-bottom: 70px;
-  padding-bottom: 20px;
-  border-bottom: solid silver 1px;
-      }
-
+    .skill{
+      margin-bottom: 70px;
+      padding-bottom: 20px;
+      border-bottom: solid silver 1px;
+    }
   }
-
 }
 
 .backend{
@@ -68,6 +66,24 @@
 .frontend{
   background-color: rgb(240,240,240);
 }
+
+
+// ********************************************* ANIMATIONS ***********************************************************
+.visible, .invisible {
+  position: relative;
+  opacity: 0.0;
+  transition: all 0.8s ease, opacity 0.8s ease;
+}
+
+[slideInBottom].invisible {
+  top: 100px
+}
+
+[slideInBottom].visible {
+  opacity: 1;
+  top: 0;
+}
+
 
 @media (max-width: 880px) {
   .backend, .frontend{

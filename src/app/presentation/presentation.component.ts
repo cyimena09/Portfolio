@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ViewportScroller} from '@angular/common';
+import ScrollTrigger from '@terwanerik/scrolltrigger';
+
 
 @Component({
   selector: 'app-presentation',
@@ -13,7 +15,21 @@ export class PresentationComponent implements OnInit {
   constructor(private viewportScroller: ViewportScroller) { }
 
   ngOnInit(): void {
-    if(this.actualDate.getHours() > 6 && this.actualDate.getHours() < 12){
+    this.onScrolling();
+    this.getMomentOfTheDay();
+  }
+
+  onNavigate(anchorId: string): void {
+    this.viewportScroller.scrollToAnchor(anchorId);
+  }
+
+  onScrolling(){
+    const trigger = new ScrollTrigger();
+    trigger.add('[fadeIn]');
+  }
+
+  getMomentOfTheDay(){
+       if(this.actualDate.getHours() > 6 && this.actualDate.getHours() < 12){
       this.message = 'matinée';
     }
     else if(this.actualDate.getHours() > 12 && this.actualDate.getHours() < 18){
@@ -23,9 +39,4 @@ export class PresentationComponent implements OnInit {
       this.message = 'soirée';
     }
   }
-
-  onNavigate(anchorId: string): void {
-    this.viewportScroller.scrollToAnchor(anchorId);
-  }
-
 }

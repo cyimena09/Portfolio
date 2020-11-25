@@ -16,8 +16,8 @@ export class ProjectComponent implements OnInit {
 
   onScrolling(){
     const trigger = new ScrollTrigger();
-    trigger.add('[slideInRight]')
-    trigger.add('[slideInLeft]')
+    trigger.add('[slideInRight]');
+    trigger.add('[slideInLeft]');
   }
 
 }

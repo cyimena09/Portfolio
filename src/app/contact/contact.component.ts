@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import ScrollTrigger from '@terwanerik/scrolltrigger';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +11,12 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.onScrolling();
+  }
+
+   onScrolling(){
+    const trigger = new ScrollTrigger();
+    trigger.add('[fadeIn]');
   }
 
 }
