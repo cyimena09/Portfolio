@@ -23,4 +23,5 @@ export class SkillComponent implements OnInit {
     });
     trigger.add('[slideInBottom]');
   }
+
 }
