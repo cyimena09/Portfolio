@@ -56,6 +56,25 @@ img:hover{
 
 }
 
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#project4{
+  display: flex;
+  flex-direction: column;
+}
+
+i{
+  color: black;
+}
+
+.precision{
+  transition: all 3s;
+}
+
 
 // ********************************************* ANIMATIONS ***********************************************************
 .visible, .invisible {
@@ -75,6 +94,11 @@ img:hover{
 [slideInLeft].invisible {
   transform: translate(-50px, 0);
 }
+
+[fadeIn].visible {
+  opacity: 1;
+}
+
 
 
 // ********************************************* SCREEN RESPONSIVITY **************************************************
@@ -117,6 +141,15 @@ img:hover{
 
   #project-crowdfunding{
     flex-direction: column-reverse;
+  }
+
+  .wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .precision{
+    margin-left: 15px;
   }
 }
 

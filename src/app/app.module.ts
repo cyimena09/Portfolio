@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillComponent } from './skill/skill.component';
+import { FadeInDirective } from './directives/fadeIn/fade-in.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SkillComponent } from './skill/skill.component';
     PresentationComponent,
     ProjectComponent,
     SkillComponent,
+    FadeInDirective,
   ],
   imports: [
     BrowserModule,
