@@ -1,27 +1,26 @@
-
-.content{
+.content {
   color: #dedcdc;
   width: 100%;
-  background-color: rgb(43,43,43);
+  background-color: rgb(43, 43, 43);
 
-  .presentation{
+  .presentation {
     width: 750px;
   }
 
-  h2{
+  h2 {
     text-align: start;
     margin-bottom: 20px;
     width: 100%;
     font-size: 25px;
   }
 
-  p{
+  p {
     margin-bottom: 30px;
     text-align: justify;
     font-size: 16px;
   }
 
-  #signature{
+  #signature {
     border-top: solid 1px;
     margin-top: 25px;
     padding-top: 10px;
@@ -30,21 +29,21 @@
   }
 }
 
-strong{
+strong {
   color: #73bbf1;
 }
 
-.link{
+.link {
   text-decoration: underline #73bbf1;
   cursor: pointer;
 
-  strong:hover{
+  strong:hover {
     color: rgb(216, 166, 30);
     text-decoration: underline rgb(216, 166, 30);
   }
 }
 
-// ********************************************* ANIMATIONS ***********************************************************
+// ANIMATIONS
 .visible, .invisible {
   opacity: 0.0;
   transition: opacity 1.8s ease;
@@ -54,25 +53,25 @@ strong{
   opacity: 1;
 }
 
-
 @media (max-width: 818px) {
 
-  .content{
+  .content {
 
     .presentation {
       width: 500px;
     }
   }
-}
 
+}
 
 @media (max-width: 510px) {
 
-  .content{
+  .content {
 
     .presentation {
       width: 90%;
     }
   }
+
 }
 

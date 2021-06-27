@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import ScrollTrigger from '@terwanerik/scrolltrigger'
+import {Component, OnInit} from '@angular/core';
+import ScrollTrigger from '@terwanerik/scrolltrigger';
 
 
 @Component({
@@ -9,13 +9,14 @@ import ScrollTrigger from '@terwanerik/scrolltrigger'
 })
 export class SkillComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.onScrolling();
   }
 
-  onScrolling(){
+  onScrolling() {
     const trigger = new ScrollTrigger({
       trigger: {
         once: true

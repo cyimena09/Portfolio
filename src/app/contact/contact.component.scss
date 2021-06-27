@@ -1,21 +1,20 @@
-
-.content{
-  background-color: rgb(25,25,25);
+.content {
+  background-color: rgb(25, 25, 25);
   color: #dedcdc;
 }
 
-li{
+li {
   list-style: none;
   font-size: 20px;
   margin-bottom: 10px;
   white-space: nowrap;
 
-  span{
+  span {
     margin-right: 20px;
   }
 }
 
-// ********************************************* ANIMATIONS ***********************************************************
+// Animations
 .visible, .invisible {
   opacity: 0.0;
   transition: opacity 1.8s ease;
@@ -25,10 +24,10 @@ li{
   opacity: 1;
 }
 
-
 @media (max-width: 768px) {
 
-  li{
+  li {
     font-size: 18px;
   }
+
 }

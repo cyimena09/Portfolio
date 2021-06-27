@@ -1,37 +1,40 @@
-
 <header id="header">
-    <nav>
-      <ul>
-        <li class="accueil" routerLinkActive="active">
-          <span class="icon fas fa-home"></span><a (click)="onNavigate('home')">Accueil</a>
-        </li>
-        <li routerLinkActive="active">
-          <span class="icon fas fa-drafting-compass"></span><a (click)="onNavigate('projects')">Mes projets</a>
-        </li>
-        <li routerLinkActive="active" id="skillss">
-          <span class=" fas fa-graduation-cap"></span><a  (click)="onNavigate('skills')">Compétences <span id="arrow-drop-menu" class=" fas fa-angle-down"></span> </a>
+  <nav>
+    <ul id="test">
+      <li class="accueil" routerLinkActive="active">
+        <span class="icon fas fa-home"></span><a (click)="onNavigate('home')">Accueil</a>
+      </li>
+      <li routerLinkActive="active">
+        <span class="icon fas fa-drafting-compass"></span><a (click)="onNavigate('projects')">Mes projets</a>
+      </li>
+      <!-- Compétences-->
+      <li routerLinkActive="active" id="skillss">
+        <span class=" fas fa-graduation-cap"></span><a (click)="onNavigate('skills')">Compétences <span
+        id="arrow-drop-menu" class=" fas fa-angle-down"></span> </a>
 
+        <ul id="submenu">
+          <li><a (click)="onNavigate('backend')">Backend</a></li>
+          <li><a (click)="onNavigate('frontend')">Frontend</a></li>
+        </ul>
+      </li>
+      <li routerLinkActive="active">
+        <span class="fas fa-envelope"></span><a (click)="onNavigate('contact')">Contact</a>
+      </li>
+      <li><a href="https://www.linkedin.com/in/emile-cyimena-9099a4176/" target="_blank">
+        <span class="network fab fa-linkedin"></span><span class="network-text">Linkedin</span></a>
+      </li>
+      <li><a href="https://github.com/cyimena09?tab=repositories" target="_blank">
+        <span class="network fab fa-github"></span><span class="network-text">Github</span></a>
+      </li>
+      <!-- CV -->
+      <li id="cv-li" (click)="onLoadCv()">
+        <span id="cv" class="network fas fa-download"></span><span class="network-text" id="cv-text">CV</span>
 
-
-            <ul id="submenu">
-              <li><a (click)="onNavigate('backend')">Backend</a></li>
-              <li><a (click)="onNavigate('frontend')">Frontend</a></li>
-            </ul>
-
-        </li>
-
-        <li routerLinkActive="active">
-          <span class="fas fa-envelope"></span><a (click)="onNavigate('contact')">Contact</a>
-        </li>
-        <li><a href="https://www.linkedin.com/in/emile-cyimena-9099a4176/" target="_blank">
-          <span class="network fab fa-linkedin"></span><span class="network-text">Linkedin</span></a>
-        </li>
-        <li><a href="https://github.com/cyimena09?tab=repositories" target="_blank">
-          <span class="network fab fa-github"></span><span class="network-text">Github</span></a>
-        </li>
-        <li><a href="assets/cv/emile-cyimena-cv.pdf">
-          <span id="cv" class="network fas fa-download"></span><span class="network-text" id="cv-text">CV</span></a>
-        </li>
-      </ul>
-    </nav>
+        <ul id="submenu-cv">
+          <li><a href="assets/cv/emile_cyimena_cv_word.docx">Format word</a></li>
+          <li><a href="assets/cv/emile_cyimena_cv_pdf.pdf">Format pdf</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </header>

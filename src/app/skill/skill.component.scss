@@ -1,56 +1,55 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.content{
+.content {
   background-color: rgb(222, 222, 222);
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
 
-  h2{
+  h2 {
     margin: 50px 0 50px 0;
   }
 
-  h3{
+  h3 {
     font-size: 40px;
     font-weight: bold;
   }
 
-  h4, ul{
+  h4, ul {
     font-weight: bold;
   }
 
-  ul{
+  ul {
     margin-left: 50px;
     margin-top: 30px;
 
-    li{
+    li {
       font-size: 17px;
     }
   }
 
-  span{
+  span {
     margin-right: 20px;
-    color: rgb(100,30,30);
+    color: rgb(100, 30, 30);
   }
 }
 
-.backend, .frontend{
+.backend, .frontend {
   padding: 80px 0 80px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .skills{
+  .skills {
     margin-top: 100px;
     width: 850px;
 
-    .skill{
+    .skill {
       margin-bottom: 70px;
       padding-bottom: 20px;
       border-bottom: solid silver 1px;
@@ -58,17 +57,17 @@
   }
 }
 
-.backend{
-  background-color: rgb(17,17,17);
+.backend {
+  background-color: rgb(17, 17, 17);
   color: white;
 }
 
-.frontend{
-  background-color: rgb(240,240,240);
+.frontend {
+  background-color: rgb(240, 240, 240);
 }
 
 
-// ********************************************* ANIMATIONS ***********************************************************
+// ANIMATIONS
 .visible, .invisible {
   position: relative;
   opacity: 0.0;
@@ -84,32 +83,34 @@
   top: 0;
 }
 
-
 @media (max-width: 880px) {
-  .backend, .frontend{
-    .skills{
+
+  .backend, .frontend {
+    .skills {
       flex-direction: column;
       width: 90%;
     }
   }
+
 }
 
 @media (max-width: 608px) {
 
-  .backend, .frontend{
+  .backend, .frontend {
 
-    .skills{
+    .skills {
 
-      .skill{
+      .skill {
 
-        h4{
+        h4 {
           font-size: 21px;
         }
 
-        li{
-        font-size: 15px;
+        li {
+          font-size: 15px;
         }
       }
     }
   }
+
 }

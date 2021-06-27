@@ -5,16 +5,16 @@ import {Directive, ElementRef} from '@angular/core';
 })
 export class FadeInDirective {
 
-    constructor(private eRef: ElementRef) {
+  constructor(private eRef: ElementRef) {
     this.defineDirective();
   }
 
-  defineDirective(){
+  defineDirective() {
     this.eRef.nativeElement.style.opacity = '0';
-
     setInterval(
       () => {
         this.eRef.nativeElement.style.opacity = '1';
       });
   }
+
 }

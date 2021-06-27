@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ViewportScroller} from '@angular/common';
 import ScrollTrigger from '@terwanerik/scrolltrigger';
 
@@ -11,7 +11,8 @@ export class PresentationComponent implements OnInit {
   message;
   actualDate = new Date();
 
-  constructor(private viewportScroller: ViewportScroller) { }
+  constructor(private viewportScroller: ViewportScroller) {
+  }
 
   ngOnInit(): void {
     this.onScrolling();
@@ -28,13 +29,11 @@ export class PresentationComponent implements OnInit {
   }
 
   getMomentOfTheDay() {
-    if(this.actualDate.getHours() > 6 && this.actualDate.getHours() <= 12){
+    if (this.actualDate.getHours() > 6 && this.actualDate.getHours() <= 12) {
       this.message = 'matinée';
-    }
-    else if(this.actualDate.getHours() > 12 && this.actualDate.getHours() < 18){
+    } else if (this.actualDate.getHours() > 12 && this.actualDate.getHours() < 18) {
       this.message = 'après-midi';
-    }
-    else{
+    } else {
       this.message = 'soirée';
     }
   }

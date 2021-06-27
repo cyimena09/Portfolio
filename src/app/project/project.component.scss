@@ -1,18 +1,17 @@
-
-.content{
-  width: 100% ;
+.content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
 }
 
-h3{
+h3 {
   color: #600505;
   font-weight: bold;
 }
 
-.project{
+.project {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,34 +20,43 @@ h3{
   border-bottom: solid silver 1px;
   width: 850px;
 
-  a{
+  a {
     width: 30%;
     text-decoration: none;
     display: flex;
     align-items: flex-end;
+    cursor: unset;
 
-    figure{
+    figure {
       margin-bottom: 0;
+
+      img {
+        cursor: pointer;
+      }
     }
   }
 
-  .description{
+  .description {
     width: 60%;
+
+    a {
+      cursor: pointer;
+    }
   }
 
-  img{
-  border-radius: 10px;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 0 40px #969490;
-  width: 100%;
-}
+  img {
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 40px #969490;
+    width: 100%;
+  }
 
-img:hover{
-  transform: scale(1.04);
-  transition: 0.3s ease-in-out;
-}
+  img:hover {
+    transform: scale(1.04);
+    transition: 0.3s ease-in-out;
+  }
 
-  figcaption{
+  figcaption {
     color: #373636;
     margin-top: 10px;
     font-size: 13px;
@@ -56,27 +64,27 @@ img:hover{
 
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-#project4{
+#project4 {
   display: flex;
   flex-direction: column;
 }
 
-i{
+i {
   color: black;
 }
 
-.precision{
+.precision {
   transition: all 3s;
 }
 
 
-// ********************************************* ANIMATIONS ***********************************************************
+// ANIMATIONS
 .visible, .invisible {
   opacity: 0.0;
   transition: transform 0.8s ease, opacity 0.8s ease;
@@ -99,60 +107,60 @@ i{
   opacity: 1;
 }
 
-
-
-// ********************************************* SCREEN RESPONSIVITY **************************************************
+// SCREEN RESPONSIVE
 @media (max-width: 900px) {
 
-  .content{
+  .content {
     .project {
       width: 700px;
     }
   }
+
 }
 
 
 @media (max-width: 768px) {
 
-  .content{
+  .content {
 
-    .project{
+    .project {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
 
-      a{
+      a {
         width: 80%;
         display: flex;
         justify-content: center;
 
-        figure{
+        figure {
+          margin-top: 25px;
           width: 400px;
         }
       }
 
-      .description{
+      .description {
         margin-top: 20px;
         width: 90%;
       }
     }
   }
 
-  #project-crowdfunding{
+  #project-crowdfunding {
     flex-direction: column-reverse;
   }
 
-  .wrapper{
+  .wrapper {
     flex-direction: column;
     align-items: center;
   }
 
-  .precision{
+  .precision {
     margin-left: 15px;
   }
-}
 
+}
 
 @media (max-width: 420px) {
 
@@ -168,4 +176,5 @@ i{
       }
     }
   }
+
 }

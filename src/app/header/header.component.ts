@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ViewportScroller} from '@angular/common';
 
 @Component({
@@ -8,7 +8,8 @@ import {ViewportScroller} from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private viewportScroller: ViewportScroller) { }
+  constructor(private viewportScroller: ViewportScroller) {
+  }
 
   ngOnInit(): void {
     this.onScroll();
@@ -18,23 +19,26 @@ export class HeaderComponent implements OnInit {
     this.viewportScroller.scrollToAnchor(anchorId);
   }
 
-  onScroll(){
+  onScroll() {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
-        document.getElementById("header").style.top = "0";
-      }
-      else {
-        document.getElementById("header").style.top = "-70px";
+        document.getElementById('header').style.top = '0';
+      } else {
+        document.getElementById('header').style.top = '-70px';
       }
       prevScrollpos = currentScrollPos;
-    }
+    };
   }
 
-  onSubMenu(){
-    let subMenu = document.getElementById("blacked");
+  onSubMenu() {
+    let subMenu = document.getElementById('blacked');
     subMenu.style.display === 'none' || subMenu.style.display === '' ? subMenu.style.display = 'flex' : subMenu.style.display = 'none';
+  }
+
+  onLoadCv() {
+    window.open('/assets/cv/emile_cyimena_cv_pdf.pdf', '_blank');
   }
 
 }

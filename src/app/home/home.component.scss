@@ -1,29 +1,29 @@
-
-.content{
+.content {
   background-color: rgb(31, 31, 31);
   color: #dedcdc;
   padding: 150px 0 20px 0;
 
-  .image-container{
+  .image-container {
     margin-bottom: 15px;
 
-    img{
+    img {
       width: 85px;
       border-radius: 100px;
     }
   }
 
-  h2{
-    color:  rgb(216, 166, 30);
-    font-size: 26px;
+  h2 {
+    color: rgb(216, 166, 30);
+    font-size: 22px;
     border-top: solid whitesmoke 1px;
     padding-top: 10px;
     margin-top: 10px;
     text-transform: uppercase;
   }
 
-  h3{
+  h3 {
     font-size: 25px;
     font-weight: bold;
   }
+
 }

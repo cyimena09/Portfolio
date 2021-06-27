@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import ScrollTrigger from '@terwanerik/scrolltrigger'
+import {Component, OnInit} from '@angular/core';
+import ScrollTrigger from '@terwanerik/scrolltrigger';
 
 @Component({
   selector: 'app-project',
@@ -8,13 +8,14 @@ import ScrollTrigger from '@terwanerik/scrolltrigger'
 })
 export class ProjectComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.onScrolling();
   }
 
-  onScrolling(){
+  onScrolling() {
     const trigger = new ScrollTrigger();
     trigger.add('[slideInRight]');
     trigger.add('[slideInLeft]');
