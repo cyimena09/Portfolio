@@ -28,7 +28,7 @@ import { FadeInDirective } from './directives/fadeIn/fade-in.directive';
     FadeInDirective,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: "fr-Fr" }],

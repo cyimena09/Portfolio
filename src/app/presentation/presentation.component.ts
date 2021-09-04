@@ -29,12 +29,14 @@ export class PresentationComponent implements OnInit {
   }
 
   getMomentOfTheDay() {
-    if (this.actualDate.getHours() > 6 && this.actualDate.getHours() <= 12) {
-      this.message = 'matinée';
+    if (this.actualDate.getHours() > 6 && this.actualDate.getHours() < 12) {
+      this.message = 'une excellente matinée';
+    } else if (this.actualDate.getHours() === 12) {
+      this.message = 'un excellent midi';
     } else if (this.actualDate.getHours() > 12 && this.actualDate.getHours() < 18) {
-      this.message = 'après-midi';
+      this.message = 'un excellent après-midi';
     } else {
-      this.message = 'soirée';
+      this.message = 'une excellente soirée';
     }
   }
 

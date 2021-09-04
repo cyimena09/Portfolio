@@ -8,7 +8,7 @@
         <span class="icon fas fa-drafting-compass"></span><a (click)="onNavigate('projects')">Mes projets</a>
       </li>
       <!-- Compétences-->
-      <li routerLinkActive="active" id="skillss">
+      <li routerLinkActive="active" id="skills">
         <span class=" fas fa-graduation-cap"></span><a (click)="onNavigate('skills')">Compétences <span
         id="arrow-drop-menu" class=" fas fa-angle-down"></span> </a>
 
@@ -27,7 +27,7 @@
         <span class="network fab fa-github"></span><span class="network-text">Github</span></a>
       </li>
       <!-- CV -->
-      <li id="cv-li" (click)="onLoadCv()">
+      <li *ngIf="!isMobileDevice()" id="cv-li" (click)="onLoadCv()">
         <span id="cv" class="network fas fa-download"></span><span class="network-text" id="cv-text">CV</span>
         <ul id="submenu-cv">
           <li><a href="assets/cv/emile_cyimena_cv_pdf.pdf">Format pdf</a></li>

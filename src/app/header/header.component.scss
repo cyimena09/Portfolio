@@ -4,11 +4,11 @@
 }
 
 header {
-  position: fixed;
   display: flex;
+  justify-content: center;
+  position: fixed;
   top: 0;
   width: 100%;
-  justify-content: center;
   background-color: rgb(60, 65, 77);
   padding: 15px 0 11px 0;
   transition: top 0.3s;
@@ -23,7 +23,7 @@ nav {
   align-items: center;
 
   ul {
-    width: 100%;
+    flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -81,27 +81,29 @@ nav {
   margin-left: 0;
 }
 
-#skillss:hover #submenu, #cv-li:hover #submenu-cv {
+#skills:hover #submenu, #cv-li:hover #submenu-cv {
   display: flex;
 }
 
 #cv {
   color: rgb(89, 160, 243);
+  cursor: pointer;
 }
 
 #cv:hover {
   color: rgb(2, 117, 239);
 }
 
-
 // SCREEN RESPONSIVE
 @media (max-width: 768px) {
 
   nav {
-    width: 100%;
+    flex: 1;
+    // width: 100%;
     padding: 0 8px 0 8px;
 
     ul {
+      flex: 1;
 
       li {
         display: flex;
