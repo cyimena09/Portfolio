@@ -7,11 +7,11 @@
     width: 750px;
   }
 
-  h2 {
-    text-align: start;
+  .dear-visitor {
     margin-bottom: 20px;
-    width: 100%;
     font-size: 25px;
+    font-weight: bold;
+
   }
 
   p {
@@ -27,6 +27,11 @@
     text-align: end;
     width: 100%;
   }
+}
+
+.first-p {
+  display: flex;
+  flex-direction: column;
 }
 
 strong {

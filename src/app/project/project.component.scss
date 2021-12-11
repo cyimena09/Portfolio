@@ -19,6 +19,7 @@ h3 {
   padding-bottom: 20px;
   border-bottom: solid silver 1px;
   width: 850px;
+  overflow: hidden;
 
   a {
     width: 30%;
@@ -117,7 +118,6 @@ i {
   }
 
 }
-
 
 @media (max-width: 768px) {
 

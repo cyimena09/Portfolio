@@ -25,7 +25,7 @@ import { FadeInDirective } from './directives/fadeIn/fade-in.directive';
     PresentationComponent,
     ProjectComponent,
     SkillComponent,
-    FadeInDirective,
+    FadeInDirective
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
