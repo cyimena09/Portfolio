@@ -82,7 +82,7 @@ nav {
   margin-left: 0;
 }
 
-#skills:hover #submenu, #cv-li:hover #submenu-cv {
+#header-skills:hover #submenu, #cv-li:hover #submenu-cv { // skills is already taken
   display: flex;
 }
 
@@ -134,7 +134,7 @@ nav {
         display: none;
       }
 
-      #skills:hover #submenu {
+      #header-skills:hover #submenu {
         display: none;
       }
     }
