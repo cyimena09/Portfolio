@@ -45,14 +45,14 @@ h3 {
   }
 
   img {
-    border-radius: 10px;
+    //border-radius: 10px;
     transition: 0.3s ease-in-out;
-    box-shadow: 0 0 40px #969490;
+    box-shadow: 0 0 20px #b0aea9;
     width: 100%;
   }
 
   img:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
     transition: 0.3s ease-in-out;
   }
 
